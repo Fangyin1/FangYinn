@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FangYin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  <style>
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-3deg); }
+      50% { transform: rotate(3deg); }
+    }
+    .animate-wiggle {
+      animation: wiggle 1s infinite;
+    }
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <div id="particles"></div>
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-blue-600 animate-pulse">FangYin</h1>
+    <div class="space-x-4 hidden md:flex">
+      <a href="#layanan" class="text-gray-700 hover:text-blue-600 transition">Layanan</a>
+      <a href="#testimoni" class="text-gray-700 hover:text-blue-600 transition">Testimoni</a>
+      <a href="#faq" class="text-gray-700 hover:text-blue-600 transition">FAQ</a>
+      <a href="#kontak" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Hubungi Kami</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-20 text-center px-4">
+    <h2 class="text-4xl font-bold mb-4 fade-up">Bikin Sistem Digitalmu Makin Keren & Otomatis!</h2>
+    <p class="text-lg mb-8 fade-up">Terima jasa pembuatan bot, website, & sistem promosi digital</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 fade-up">
+      <a href="https://wa.me/6287743819853" target="_blank"
+        class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition duration-300 ease-in-out shadow-lg hover:scale-105">
+        Order via WhatsApp
+      </a>
+      <a href="https://t.me/fangtod" target="_blank"
+        class="border border-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition duration-300 ease-in-out shadow-lg hover:scale-105">
+        Chat via Telegram
+      </a>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="layanan" class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center text-blue-600 mb-10 fade-up">Layanan Kami</h2>
+    <div class="space-y-6">
+      <div class="bg-white shadow-md rounded-xl p-6 fade-up">
+        <h3 class="text-xl font-semibold text-blue-500 mb-2">
+          <span class="inline-block animate-bounce">📢</span> JASA TEBAR TELEGRAM (SPAM PROMOSI)
+        </h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Support kirim via link forward</li>
+          <li>Kirim langsung pakai teks wording</li>
+          <li>Tambahan fitur keren lainnya</li>
+          <li class="text-sm italic text-gray-500">Harga sesuai tingkat kesulitan</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-md rounded-xl p-6 fade-up">
+        <h3 class="text-xl font-semibold text-green-500 mb-2">
+          <span class="inline-block animate-pulse">⚡</span> BOT WHATSAPP TOP UP OTOMATIS
+        </h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Fitur produk & add list</li>
+          <li>Fitur jaga grup</li>
+          <li>Demo lengkap tersedia</li>
+          <li class="text-sm italic text-gray-500">Tambah produk top up cuma 5K</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-md rounded-xl p-6 fade-up">
+        <h3 class="text-xl font-semibold text-purple-500 mb-2">
+          <span class="inline-block animate-wiggle">🤖</span> PEMBUATAN BOT TELEGRAM (BOTFATHER)
+        </h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Custom fitur sesuai kebutuhan</li>
+          <li>Support auto-respon, broadcast, dan lainnya</li>
+          <li class="text-sm italic text-gray-500">Harga fleksibel sesuai fitur</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-md rounded-xl p-6 fade-up">
+        <h3 class="text-xl font-semibold text-pink-500 mb-2">
+          <span class="inline-block animate-spin">🌐</span> PEMBUATAN TEMA WEBSITE
+        </h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Store, katalog, landing page, dan lainnya</li>
+          <li>Bisa sesuai referensi kamu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center fade-up">
+      <h2 class="text-2xl font-bold mb-6 text-blue-600">Apa Kata Mereka?</h2>
+      <p class="text-gray-600 italic">"Pelayanan cepat & hasil sesuai request. Recommended banget buat yang mau bikin bot atau sistem digital!"</p>
+      <p class="text-gray-500 mt-2">— Customer Puas</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="max-w-4xl mx-auto py-16 px-4">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6 text-center fade-up">FAQ</h2>
+    <div class="space-y-4 text-gray-700 fade-up">
+      <div>
+        <h4 class="font-semibold">Q: Berapa lama proses pengerjaan?</h4>
+        <p>A: Rata-rata 1-3 hari tergantung jenis project dan fitur yang diminta.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Q: Apakah ada garansi?</h4>
+        <p>A: Ya, revisi minor gratis dan support selama 7 hari setelah selesai.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak" class="bg-white border-t py-6 text-center text-gray-500 text-sm fade-up">
+    &copy; 2025 FangYin. All rights reserved.
+  </footer>
+
+  <script>
+    // Animasi scroll (fade-up)
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+
+    // Inisialisasi Particles
+    tsParticles.load("particles", {
+      background: {
+        color: { value: "#f9fafb" }
+      },
+      fpsLimit: 60,
+      interactivity: {
+        events: {
+          onHover: { enable: false },
+          resize: true
+        }
+      },
+      particles: {
+        color: { value: "#60a5fa" },
+        links: {
+          color: "#60a5fa",
+          distance: 120,
+          enable: true,
+          opacity: 0.3,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 0.5,
+          direction: "none",
+          outModes: { default: "out" }
+        },
+        number: {
+          value: 40,
+          density: { enable: true, area: 800 }
+        },
+        opacity: { value: 0.3 },
+        shape: { type: "circle" },
+        size: { value: { min: 1, max: 3 } }
+      },
+      detectRetina: true
+    });
+  </script>
+</body>
+</html>
